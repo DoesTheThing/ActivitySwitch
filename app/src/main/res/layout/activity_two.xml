@@ -19,6 +19,26 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:columnCount="2"
+            tools:ignore="MissingConstraints">
+            <Switch
+                android:id="@+id/switch_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="@string/s1"/>
+            <Switch
+                android:id="@+id/switch_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:text="@string/s2"/>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:columnCount="2">
             <Button
                 android:text="@string/ok"
