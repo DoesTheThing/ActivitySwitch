@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         text = findViewById(R.id.transfer_data_edit_text);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 555)
+        {
+            if (data != null)
+            {
+                String res = data.getStringExtra("resData");
+
+
+
+            }
+        }
+
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     public void onExitCLick(View view)

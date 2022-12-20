@@ -30,7 +30,7 @@ public class two extends AppCompatActivity {
         Intent i = new Intent();
         i.putExtra("resData", text.getText());
 
-        setResult(RESULT_OK);
+        setResult(RESULT_OK, i);
         finish();
     }
 

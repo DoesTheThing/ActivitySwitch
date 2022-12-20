@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         tools:ignore="MissingConstraints">
         <TextView
             android:layout_width="wrap_content"
@@ -22,11 +23,13 @@
             <Button
                 android:text="@string/ok"
                 android:layout_column="0"
-                android:layout_columnWeight="1"/>
+                android:layout_columnWeight="1"
+                android:onClick="onOkClick"/>
             <Button
                 android:text="@string/cancel"
                 android:layout_column="1"
-                android:layout_columnWeight="1"/>
+                android:layout_columnWeight="1"
+                android:onClick="onCanceledClick"/>
         </GridLayout>
 
     </LinearLayout>
