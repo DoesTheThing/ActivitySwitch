@@ -2,4 +2,7 @@
     <string name="app_name">ActivitySwitch</string>
     <string name="app_exit">Exit app</string>
     <string name="activity_open">Open dialog</string>
+    <string name="dialog_exit_text">Are you sure you want to exit?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 </resources>

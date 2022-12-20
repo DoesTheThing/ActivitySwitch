@@ -4,42 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".two">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
-
-        <EditText
-            android:id="@+id/transfer_data_edit_text"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hmm"
-            />
-
+            android:id="@+id/intent_text_view"
+            android:textSize="20dp"/>
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="2"
-            tools:ignore="MissingConstraints">
+            android:columnCount="2">
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:text="@string/ok"
                 android:layout_column="0"
-                android:layout_columnWeight="1"
-                android:text="@string/activity_open"
-                android:onClick="onDialogClick"/>
+                android:layout_columnWeight="1"/>
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:text="@string/cancel"
                 android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:text="@string/app_exit"
-                android:onClick="onExitCLick"/>
+                android:layout_columnWeight="1"/>
         </GridLayout>
+
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
