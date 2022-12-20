@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ActivitySwitch</string>
+    <string name="app_exit">Exit app</string>
+    <string name="activity_open">Open dialog</string>
 </resources>
